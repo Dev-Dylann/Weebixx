@@ -4,8 +4,8 @@ import anilist, {fetchTrending, fetchRecent} from "../lib/anilist"
 import Grid from "./Grid"
 
 export default async function RecentEpisodes() {
-    /* const recentEpisodes = await anilist.fetchRecentEpisodes("gogoanime", 1, 24) */
-    const recentEpisodes = await fetchRecent()
+    const recentEpisodes = await anilist.fetchRecentEpisodes("gogoanime", 1, 24)
+    /* const recentEpisodes = await fetchRecent() */
 
     console.log(recentEpisodes)
 

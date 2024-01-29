@@ -11,9 +11,9 @@ export default async function Home() {
     <main className='flex flex-col gap-6'>
       <TrendingSlider results={trendingAnime.results} />
 
-      <Suspense fallback={<GridSkeleton title={'Recent Anime Releases'} />}>
+      {/* <Suspense fallback={<GridSkeleton title={'Recent Anime Releases'} />}>
         <RecentEpisodes />
-      </Suspense>
+      </Suspense> */}
     </main>
   );
 }

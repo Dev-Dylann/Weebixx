@@ -18,7 +18,7 @@ function Item() {
 
 export default function GridSkeleton({ title }: Props) {
     return (
-        <section className="px-5 flex flex-col gap-3">
+        <section className="flex flex-col gap-3">
             <h2 className={`${montserrat.className} font-bold`}>{title}</h2>
 
             <article className='grid grid-cols-3 gap-3'>

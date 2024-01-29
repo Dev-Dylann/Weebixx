@@ -27,4 +27,15 @@ const fetchRecent = cache( async () => {
     }
 })
 
-export {fetchTrending, fetchRecent}
+const searchAnime = cache(async (query: string, page: string) => {
+    try {
+        const response = await anilist.search(query, Number(page), 24)
+
+        return response
+    } catch(err) {
+        console.log(err)
+        throw new Error(`No results found for ${query}`)
+    }
+})
+
+export {fetchTrending, fetchRecent, searchAnime}
