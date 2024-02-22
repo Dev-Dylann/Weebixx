@@ -38,4 +38,15 @@ const searchAnime = cache(async (query: string, page: string) => {
     }
 })
 
-export {fetchTrending, fetchRecent, searchAnime}
+const fetchAnimeInfo = cache(async (animeId: string) => {
+    try {
+        const response = await anilist.fetchAnimeInfo(animeId)
+
+        return response
+    } catch(err) {
+        console.log(err)
+        throw new Error('Couldn\'t find requested media')
+    }
+})
+
+export {fetchTrending, fetchRecent, searchAnime, fetchAnimeInfo}
