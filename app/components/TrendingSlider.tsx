@@ -48,7 +48,7 @@ export default function TrendingSlider({results}: Props) {
                         />
 
                         <article className='h-full bg-black bg-opacity-50 flex flex-col gap-2 justify-end px-10 py-8'>
-                            <Link href={`/info/anime?id=${item.id}`} className="line-clamp-2 text-ellipsis h-fit">
+                            <Link href={`/anime/info?id=${item.id}`} className="line-clamp-2 text-ellipsis h-fit">
                                 {title?.romaji}
                                 
                                 <span className="text-xs ml-3">

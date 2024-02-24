@@ -14,7 +14,7 @@ export default function Grid({itemsArray, link}: GridProps) {
             {itemsArray.map((item, index) => {
                 const title = item.title as ITitle
                 
-                const href = link === 'anime' ? `/info/anime?id=${item.id}` : '/'
+                const href = link === 'anime' ? `/anime/info?id=${item.id}` : '/'
 
                 return (
                     <Link key={`${index}. ${item.id}`} href={href} className="min-h-48 relative flex flex-col gap-2 rounded-md shadow-md">

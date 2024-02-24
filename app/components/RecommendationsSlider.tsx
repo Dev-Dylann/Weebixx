@@ -60,7 +60,7 @@ export default function RecommendationsSlider({recommendations}: Props) {
 
                     return (
                         <SplideSlide key={recommendation.id}>
-                           <Link key={recommendation.id} href={`/info/anime?id=${recommendation.id}`} className='h-48 w-full relative flex flex-col gap-2 rounded-md shadow-md'>
+                           <Link key={recommendation.id} href={`/anime/info?id=${recommendation.id}`} className='h-48 w-full relative flex flex-col gap-2 rounded-md shadow-md'>
                                 <Image 
                                     src={recommendation.image as string}
                                     alt={title.romaji as string}

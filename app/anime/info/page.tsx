@@ -1,7 +1,7 @@
 import { fetchAnimeInfo } from "@/app/lib/anilist"
-import MediaInfo from "../components/MediaInfo"
+import MediaInfo from "@/app/components/MediaInfo"
 import EpisodeList from "./components/EpisodeList"
-import RecommendationsSlider from "../components/RecommendationsSlider"
+import RecommendationsSlider from "@/app/components/RecommendationsSlider"
 import { IAnimeEpisode, IAnimeResult, ITitle } from "@consumet/extensions"
 
 type Props = {
