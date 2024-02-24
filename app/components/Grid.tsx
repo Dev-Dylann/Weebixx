@@ -23,7 +23,7 @@ export default function Grid({itemsArray, link}: GridProps) {
                             alt={`${title?.romaji}`}
                             fill
                             sizes="33vw"
-                            className="rounded-md shadow-md object-cover roundeed-md"
+                            className="shadow-md object-cover rounded-md"
                         />
                         
                         {item.episodeNumber && (

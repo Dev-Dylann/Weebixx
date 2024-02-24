@@ -1,7 +1,8 @@
 import { fetchAnimeInfo } from "@/app/lib/anilist"
 import MediaInfo from "../components/MediaInfo"
 import EpisodeList from "./components/EpisodeList"
-import { IAnimeEpisode, ITitle } from "@consumet/extensions"
+import RecommendationsSlider from "../components/RecommendationsSlider"
+import { IAnimeEpisode, IAnimeResult, ITitle } from "@consumet/extensions"
 
 type Props = {
     searchParams: {
@@ -20,6 +21,8 @@ export default async function AnimeInfo({ searchParams }: Props) {
             <MediaInfo media='anime' mediaInfo={animeInfo} />
 
             <EpisodeList animeId={id} episodes={animeInfo.episodes as IAnimeEpisode[]} />
+
+            <RecommendationsSlider recommendations={animeInfo.recommendations as IAnimeResult[]} />
         </main>
     )
 }
