@@ -13,7 +13,7 @@ export default function MediaInfo({ media, mediaInfo }: Props) {
 
     return (
         <section className='relative p-5 flex flex-col'>
-            <div className="absolute top-0 left-0 w-full h-[40vh]">
+            <div className="absolute top-0 left-0 w-full h-[40vh]" style={{ backgroundColor: mediaInfo.color as string}}>
                 <Image 
                     src={mediaInfo.cover as string}
                     alt={`${title.romaji}`}

@@ -1,4 +1,4 @@
-import GridSkeleton from "@/app/ui/skeletons"
+import {GridSkeleton} from "@/app/ui/skeletons"
 
 export default function loading() {
     return (

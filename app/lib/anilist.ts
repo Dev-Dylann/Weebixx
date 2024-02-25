@@ -34,7 +34,7 @@ const searchAnime = cache(async (query: string, page: string) => {
         return response
     } catch(err) {
         console.log(err)
-        throw new Error(`No results found for ${query}`)
+        throw new Error(`No results found for "${query}"`)
     }
 })
 

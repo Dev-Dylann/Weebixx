@@ -2,7 +2,7 @@ import anilist, { fetchTrending } from "./lib/anilist";
 import TrendingSlider from "./components/TrendingSlider";
 import RecentEpisodes from "./components/RecentEpisodes";
 import { Suspense } from "react";
-import GridSkeleton from "./ui/skeletons";
+import {GridSkeleton} from "./ui/skeletons";
 
 export default async function Home() {
   const trendingAnime = await fetchTrending()

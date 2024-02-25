@@ -51,7 +51,7 @@ export default function RecommendationsSlider({recommendations}: Props) {
     })
 
     return (
-        <section className='p-5 pb-12 flex flex-col gap-4'>
+        <section className='px-5 pb-12 flex flex-col gap-4'>
             <h3 id='recommend-label' className={`${montserrat.className} text-lg`}>More Like This...</h3>
 
             <Splide options={sliderOptions} aria-labelledby='recommend-label' className=''>
@@ -69,7 +69,7 @@ export default function RecommendationsSlider({recommendations}: Props) {
                                     className='rounded-md shadow-md object-cover'
                                 />
 
-<div className="rounded-md z-[2] flex items-end p-2 h-full bg-gradient-to-t from-black/70 from-20%">
+                        <div className="rounded-md z-[2] flex items-end p-2 h-full bg-gradient-to-t from-black/70 from-20%">
                             <p className='text-sm text-white line-clamp-2 text-ellipsis'>{title?.romaji}</p>
                         </div>
                            </Link>
