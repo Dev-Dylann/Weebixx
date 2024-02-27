@@ -53,4 +53,19 @@ function MediaInfoSkeleton() {
     )
 }
 
-export {GridSkeleton, MediaInfoSkeleton}
+function EpisodesSkeleton() {
+    return (
+        <section className='py-8 px-5 flex flex-col gap-3'>
+            <h2 className={`${montserrat.className} font-medium`}>All Episodes</h2>
+
+            <article className='flex flex-col gap-3'>
+                {mappish.map((item, index) => (
+                    <div key={`skeleton${index}`} className={`${shimmer} relative overflow-hidden rounded-md bg-gray-100 h-[20vw]`}></div>
+                ))}
+
+            </article>
+        </section>
+    )
+}
+
+export {GridSkeleton, MediaInfoSkeleton, EpisodesSkeleton}

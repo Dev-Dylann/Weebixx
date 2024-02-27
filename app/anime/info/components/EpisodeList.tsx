@@ -35,9 +35,9 @@ export default function EpisodeList({ animeId, episodes, pathname, title }: Prop
         <section className='py-8 px-5 flex flex-col gap-3'>
             <div className='flex items-center justify-between flex-wrap'>
                 {!pathname ? (
-                    <h3 className={`${montserrat.className} text-lg`}>Episodes</h3>
+                    <h3 className={`${montserrat.className} text-lg font-medium`}>Episodes</h3>
                 ) : (
-                    <h2 className={`${montserrat.className}`}>
+                    <h2 className={`${montserrat.className} font-medium`}>
                         <Link href={`/anime/info?id=${animeId}`} className='underline'>{title}</Link>
                         &nbsp;
                         All Episodes

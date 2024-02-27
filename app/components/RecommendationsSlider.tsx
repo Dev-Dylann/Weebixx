@@ -53,7 +53,7 @@ export default function RecommendationsSlider({recommendations}: Props) {
 
     return (
         <section className='px-5 pb-12 flex flex-col gap-4'>
-            <h3 id='recommend-label' className={`${montserrat.className} text-lg`}>More Like This...</h3>
+            <h3 id='recommend-label' className={`${montserrat.className} text-lg font-medium`}>More Like This...</h3>
 
             <Splide options={sliderOptions} aria-labelledby='recommend-label' className=''>
                 {recommendations.map((recommendation) => {
