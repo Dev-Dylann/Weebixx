@@ -36,7 +36,7 @@ export default function MediaInfo({ media, mediaInfo }: Props) {
                     />
                 </div>
 
-                <h2 className={`${montserrat.className} text-2xl`} title={title?.english}>
+                <h2 className={`${montserrat.className} text-2xl font-bold`} title={title?.english}>
                     {title?.romaji}
                 </h2>
 

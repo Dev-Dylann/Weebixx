@@ -8,6 +8,6 @@ export default function SearchManga({ searchParams }: Props) {
     const { query } = searchParams
 
     return (
-        <h1>Searching for "{query}" in manga</h1>
+        <h1>Searching for &#39;{query}&#39; in manga</h1>
     )
 }

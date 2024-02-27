@@ -36,7 +36,7 @@ export default function Header() {
                     {search ? <XMarkIcon className="h-7 w-7" /> : <MagnifyingGlassIcon className="h-6 w-6" />}
                 </button>
 
-                {search && <SearchForm />}
+                {search && <SearchForm setSearch={setSearch} />}
             </section>
         </header>
     )

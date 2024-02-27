@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { nunito } from "./ui/fonts";
+import { nunito, poppins } from "./ui/fonts";
 import "./globals.css";
 import Header from "./components/Header";
 import ToTop from "./components/ToTop";

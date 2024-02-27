@@ -17,7 +17,7 @@ export default async function SearchAnimePage({ searchParams }: Props) {
 
     return (
         <section className="flex flex-col gap-3">
-            <h2 className={`${montserrat.className} font-bold`}>Results for "{query}" in anime</h2>
+            <h2 className={`${montserrat.className} font-bold`}>Results for &#39;{query}&#39; in anime</h2>
 
             <Grid itemsArray={data.results} link={'anime'} />
 

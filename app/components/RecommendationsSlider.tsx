@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { montserrat } from "@/app/ui/fonts"
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css';
+import { Options } from '@splidejs/react-splide'
 import { IAnimeResult, ITitle } from "@consumet/extensions"
 
 type Props = {
@@ -15,11 +16,11 @@ type Props = {
 
 export default function RecommendationsSlider({recommendations}: Props) {
 
-    const [sliderOptions] = useState({
+    const [sliderOptions] = useState<Options>({
         type: 'slide',
         perPage: 3,
         perMove: 3,
-        mediaQuery: 'min',
+        mediaQuery: "min",
         breakpoints: {
             640: {
                 perPage: 4,
