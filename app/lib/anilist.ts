@@ -49,4 +49,15 @@ const fetchAnimeInfo = cache(async (animeId: string) => {
     }
 })
 
-export {fetchTrending, fetchRecent, searchAnime, fetchAnimeInfo}
+const fetchEpisodeLinks = cache(async (episodeId: string) => {
+    try {
+        const response = await anilist.fetchEpisodeSources(episodeId)
+
+        return response
+    } catch(err) {
+        console.log(err)
+        throw new Error('Couldn\'t find requested episode')
+    }
+})
+
+export {fetchTrending, fetchRecent, searchAnime, fetchAnimeInfo, fetchEpisodeLinks}

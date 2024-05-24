@@ -9,7 +9,7 @@ type ErrorProps = {
 }
 
 export default function Error({ error, reset }: ErrorProps) {
-    console.log(error)
+    console.log(error.message)
 
     return (
         <article className='text-center py-10 px-5 flex flex-col gap-4 items-center sm:py-20'>

@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import { nunito, poppins } from "./ui/fonts";
+import { nunito } from "./ui/fonts";
 import "./globals.css";
 import Header from "./components/Header";
 import ToTop from "./components/ToTop";
 
 export const metadata: Metadata = {
-  title: "Weebixx",
+  title: {
+    template: 'Weebixx | %s',
+    default: 'Weebixx',
+  },
   description: "Discover your favourite animanga titles, all conveniently available for your enjoyment on Weebixx.",
 };
 

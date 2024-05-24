@@ -32,6 +32,7 @@ export default function MediaInfo({ media, mediaInfo }: Props) {
                         alt={`${title.romaji}`}
                         fill
                         quality={100}
+                        sizes="33vw"
                         className='rounded-lg'
                     />
                 </div>

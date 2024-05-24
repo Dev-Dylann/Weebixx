@@ -1,13 +1,9 @@
 "use client"
 
-import Image from "next/image";
-import Link from "next/link";
-import WeebixxLogo from "@/public/logo.png"
-import WeebixxDarkLogo from "@/public/logo-dark.png"
 import { Bars3Icon, XMarkIcon, MagnifyingGlassIcon } from '@heroicons/react/24/solid'
-
 import { useEffect, useState } from "react"; 
 import Nav from "./Nav";
+import Logo from "./Logo"
 import SearchForm from "./SearchForm";
 
 export default function Header() {
@@ -23,14 +19,7 @@ export default function Header() {
 
                 <Nav navStatus={navStatus} />
 
-                <Link href="/">
-                    <Image
-                        src={WeebixxLogo}
-                        alt="Weebixx Logo"
-                        priority
-                        className='max-w-[125px]'
-                    />
-                </Link>
+                <Logo />
 
                 <button className="rounded-md z-[7]" onClick={() => setSearch(prev => !prev)}>
                     {search ? <XMarkIcon className="h-7 w-7" /> : <MagnifyingGlassIcon className="h-6 w-6" />}

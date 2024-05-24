@@ -13,6 +13,7 @@
     "@heroicons/react": "^2.1.1",
     "@splidejs/react-splide": "^0.7.12",
     "clsx": "^2.1.0",
+    "hls.js": "^1.5.7",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",

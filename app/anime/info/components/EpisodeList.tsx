@@ -65,7 +65,7 @@ export default function EpisodeList({ animeId, episodes, pathname, title }: Prop
                     </p>
                 ) : (
                     episodeList.map((episode, index) => (
-                        <Link key={`Episode ${index}`} href={`/watch?id=${animeId}&epId=${episode.id}`} className={clsx(' transition-all duration-500', {'flex items-center gap-2 py-4' : view === 'List', 'flex flex-col gap-2' : view === 'Grid'})}>
+                        <Link key={`Episode ${index}`} href={`/anime/watch?id=${animeId}&epId=${episode.id}`} className={clsx(' transition-all duration-500', {'flex items-center gap-2 py-4' : view === 'List', 'flex flex-col gap-2' : view === 'Grid'})}>
                             <div className={clsx('relative', {'w-1/4 h-[12vw]' : view === 'List', 'w-full h-[15vw]' : view === 'Grid'})}>
                                 <Image
                                     src={episode.image as string}

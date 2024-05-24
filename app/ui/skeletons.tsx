@@ -18,7 +18,7 @@ function GridItem() {
 
 function GridSkeleton({ title }: Props) {
     return (
-        <section className="flex flex-col gap-3">
+        <section className="flex flex-col gap-1 px-5 divide-y">
             <h2 className={`${montserrat.className} font-bold`}>{title}</h2>
 
             <article className='grid grid-cols-3 gap-3'>
